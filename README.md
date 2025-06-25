@@ -1,20 +1,30 @@
-📄 Dataset Description – Sonar Rock vs Mine 🪨💣
-This dataset contains sonar signal returns collected by bouncing sound waves off different objects. The main objective is to classify whether the object is a Rock (🪨) or a Mine (💣) based on the reflected sonar signals.
+## 📄 Dataset Description – Sonar Rock vs Mine 🪨💣
 
-The dataset has 60 numerical features (🧪), each representing the strength of the returned sonar signal at a specific frequency.
+This dataset contains sonar signal returns collected by bouncing sound waves off different objects.  
+The primary goal is to **classify** whether the object is a **Rock (🪨)** or a **Mine (💣)** based on the characteristics of the reflected sonar signals.
 
-These signals were recorded using a fixed sensor, and each feature has a value between 0 and 1 (🎚️).
+---
 
-The target label is:
+### 📦 Content
 
-"R" for Rock (🪨)
+- 📊 **Features:** 60 numerical attributes (🧪), each representing the **strength of a sonar return signal** at a particular frequency  
+- 🎚️ **Range:** All feature values are normalized between **0 and 1**  
+- 🔁 **Target Variable:**  
+  - `"R"` = Rock 🪨  
+  - `"M"` = Mine 💣  
 
-"M" for Mine (💣)
+- 📈 **Samples:** 208  
+- 🧪 **Type:** Binary Classification
 
-Total samples: 208
+---
 
-Type: Binary Classification
+### 🧠 Model Used – Logistic Regression (📈➡️📉)
 
-🧠 Model Used – Logistic Regression (📈➡️📉)
-To classify sonar signals into rocks or mines, I used Logistic Regression, a linear model that predicts probabilities between 0️⃣ and 1️⃣. It’s ideal for binary classification tasks like this and helps determine how likely a sonar return is from a mine 💣 or a rock 🪨 based on its signal pattern.
+To classify the sonar signals, I implemented **Logistic Regression**, a probabilistic linear model that is well-suited for **binary classification** tasks.  
+It learns patterns in the frequency-based signal data to estimate the likelihood that a sonar return corresponds to a **mine (💣)** or a **rock (🪨)**.
 
+✅ Logistic Regression provided interpretable results and performed well on this dataset due to its ability to model binary decision boundaries.
+
+---
+
+This project demonstrates how signal data can be analyzed using machine learning to assist in **object detection and classification** in real-world environments s
